@@ -1,0 +1,38 @@
+$header-color:rgb(153, 33, 73);
+$hover-color:#555;
+$button-color: white;
+
+nav{
+
+    background-color: $header-color;
+    padding: 30px 40px;
+    color: $button-color;
+    text-align: center;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+}
+
+
+#create {
+    padding: 9px 10px 13px;
+    width: 25%;
+    background: #d9d9d9;
+    color: $hover-color;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #bbb;
+    }
+
+}

@@ -1,0 +1,5 @@
+# assignment_2.gitignore
+secret.yml
+config/database.yml
+/db/*.sqlite3
+*.tmp

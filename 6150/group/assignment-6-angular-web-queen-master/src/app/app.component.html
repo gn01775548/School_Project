@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="text-align:center">
+  <h1>
+    Welcome To {{ title }}!
+  </h1>
+
+<router-outlet></router-outlet>
+<app-nav-bar [areaComponent]="area" (newListEmitted)="addList($event)"></app-nav-bar>
+<app-config *ngIf="showConfig"></app-config>
+<app-area #area [listsChild]="listsParent"></app-area>

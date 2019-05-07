@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<title>EXCEL APPLICATION</title>
+<script type="text/java script" src="operation.js"></script>
+<body>
+<table id="table" border="1" width="20px" height="20px">
+  <tr>
+  <td></td>
+  <td>1</td>
+  <td>2</td>
+  <td>3</td>
+  </tr>
+
+  <tr id="1">
+    <td>1</td>
+    <td id="1"><input type="text"></td>
+    <td id="2"><input type="text"></td>
+    <td id="3"><input type="text"></td>
+  </tr>
+  <tr id="2">
+    <td>2</td>
+    <td id="1"><input type="text"></td>
+    <td id="2"><input type="text"></td>
+    <td id="3"><input type="text"></td>
+  </tr>
+  <tr id="3">
+    <td>3</td>
+    <td id="1"><input type="text"></td>
+    <td id="2"><input type="text"></td>
+    <td id="3"><input type="text"></td>
+  </tr>
+  <tr id="4">
+    <td>4</td>
+    <td id="1"><input type="text"></td>
+    <td id="2"><input type="text"></td>
+    <td id="3"><input type="text"></td>
+  </tr>
+</table>
+
+<button onclick="addRow()">Add Row</button>
+<button onclick="addColumn()">Add Column</button>
+<script>
+function addRow() {
+    var table = document.getElementById("table");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "NEW CELL1";
+    cell2.innerHTML = "NEW CELL2";
+}
+</script>
+<script>
+function addColumn() {
+    var table = document.getElementById("table");
+    var column = table.insertColumn(0);
+    var cell1 = column.insertCell(0);
+    var cell2 = column.insertCell(1);
+    cell1.innerHTML = "NEW CELL1";
+    cell2.innerHTML = "NEW CELL2";
+}
+</script>
+
+</body>
+</html>
+

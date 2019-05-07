@@ -1,0 +1,23 @@
+{
+  "name": "assignment-5-javascript-2-web-queen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall-2018/assignment-5-javascript-2-web-queen.git"
+  },
+  "author": "Webqueen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall-2018/assignment-5-javascript-2-web-queen/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall-2018/assignment-5-javascript-2-web-queen#readme",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.1"
+  }
+}

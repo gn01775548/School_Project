@@ -1,0 +1,146 @@
+
+  .label {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    height: 35px;
+    background: #f3d4d4;
+  }
+  
+  .inlabel {
+    display: inline-block;
+    width: 30%;
+    background-color: transparent;
+    float: left;
+  }
+  
+  .author {
+    border: none;
+    width: 200px;
+  }
+  
+  #user {
+    float: left;
+  }
+  
+  .close, .add, .delB {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 12px;
+  }
+  
+  .close:hover, .add, .delB:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  .add {
+    display: block;
+  }
+  
+  input {
+    border: none;
+    width: 65%;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: 0;
+  }
+  /*# sourceMappingURL=todolist.component.css.map */
+
+
+
+  $padding-li: 12px 8px 12px 40px;
+$padding-li: 12px 8px 12px 40px;
+$hover-color:#555;
+$button-color: white;
+
+$list-header-color: rgb(243, 212, 212);
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        position: relative;
+        padding: $padding-li;
+        font-size: 18px;
+        transition: 0.2s;
+
+
+        cursor: pointer;
+        background: #eee;
+        &:hover {
+            background: #ddd;
+        }
+    }
+
+}
+
+.label{  
+    position: relative;
+    padding: $padding-li;
+    font-size: 18px;
+    transition: 0.2s;
+
+    height:35px;
+    background: $list-header-color; 
+    
+}
+
+.inlabel{
+    display:inline-block;
+    width: 30%;
+    background-color: transparent;
+    float: left;
+}
+
+
+.author{
+    border: none;
+    width: 200px;
+}
+
+
+
+#user{
+    float:left;
+}
+
+
+.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 12px;
+
+    &:hover {
+        background-color: $hover-color;
+        color: $button-color;
+    }
+
+}
+
+.add {
+    @extend .close;
+    display: block;
+    @extend .close:hover ;
+}
+
+
+.delB {
+    @extend  .close ;
+}
+
+
+input {
+    border: none;
+    width: 65%;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: 0;
+}

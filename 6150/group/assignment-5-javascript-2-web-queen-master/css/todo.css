@@ -1,0 +1,140 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+.label{  
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    height:35px;
+    background: rgb(243, 212, 212); 
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.inlabel{
+    display:inline-block;
+    width: 30%;
+    background-color: transparent;
+    float: left;
+}
+/* 
+.close {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    padding: 12px 25px 10px 16px；
+}
+
+.close:hover {
+    background-color: #555;
+    color: white;
+} */
+
+
+
+
+
+
+.add {
+    position: absolute;
+    display: block;
+    right: 80px;
+    top: 8px; 
+    /* width: 1px; */
+    padding: 12px;
+    
+}
+
+.add:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+.close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 12px;
+}
+
+.close:hover {
+    background-color: #555;
+    color: white;
+}
+
+.delB {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 12px;
+}
+
+.delB:hover {
+    background-color: #555;
+    color: white;
+}
+
+input {
+    border: none;
+    width: 65%;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: 0;
+}
+
+.header {
+    background-color: rgb(153, 33, 73);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.author{
+
+    border: none;
+    width: 200px;
+}
+
+#create {
+    padding: 9px 10px 13px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#create:hover {
+    background-color: #bbb;
+}
+
+#user{
+    float:left;
+}

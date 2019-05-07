@@ -1,0 +1,50 @@
+body {
+    background-color: transparent;
+}
+
+table {
+    border: solid black ;
+}
+
+section{
+    border:1px solid black;
+    min-width: 1000px;
+    border-right-style:5px solid black;
+}
+
+.number {
+    background: lightgray;
+    border-width:2px;
+    border-right-style:solid;
+    border-left-style:solid;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}
+
+.brl{
+    border-width:2px;
+    border-right-style:solid;
+}
+
+.headline{
+    border-right-style: 2px solid black;   
+}
+
+#main {
+    width: 600px;
+    margin: 0 auto; 
+  }
+
+.textSquare {
+    border:solid black;
+    width:35px; 
+    height:35px;
+    font-size:25px;
+    margin-top:5px;
+    margin-left:5px;
+}
+
+span{
+    font-size:18px;Í
+}

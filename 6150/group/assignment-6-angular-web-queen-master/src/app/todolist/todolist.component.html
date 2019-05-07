@@ -1,0 +1,25 @@
+<h1>GREARRRR</h1>
+<section>
+
+<div id="{{'todolist-'+todolist.id}}" class="label"
+ [class.todolist]="classObject.todolist">
+ <div class="inlabel">
+  Author: 
+</div>
+<div class="inlabel">
+  Title:<input class="title" type="text"  [attr.name]="todolist.title"
+  [(ngModel)]="todolist.title">
+</div>
+<div class="inlabel">
+  Date:<input class="date" type="text"  [attr.name]="todolist.date"
+  [(ngModel)]="todolist.date">
+</div>
+</div>
+
+<ul>
+  <li> <input type="text"> </li>
+  <li> <input type="text"> </li>
+  <li> <input type="text"> </li>
+</ul>
+
+</section>
