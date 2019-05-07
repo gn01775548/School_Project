@@ -1,0 +1,936 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Collect Twitter Data\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 298,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import twitter"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 299,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import tweepy"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Get Twitter Api"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 300,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "auth = tweepy.OAuthHandler('NzIdrbd4Ht4Il0oLMe2IaMDXn', 'PB13487DbvYEze2MnIgX4a1w2oY75qxDmcNELvRjf0kcfsO7dU')\n",
+    "auth.set_access_token('1086338263206514689-Em3wWOVgKwQ1re4Zqf9274VdfXzU09', 'My58nuVtHuInK5r2tmcSzgyEJHn09v5Jj0f9gL9Iv0o4j')\n",
+    "api = tweepy.API(auth)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Collect Singers data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 301,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "user = api.get_user('AvrilLavigne')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 302,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_names = []\n",
+    "singer_id = []\n",
+    "singer_url = []\n",
+    "singer_description = []\n",
+    "singer_followers_count = []"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Collect datas of singers' information"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 303,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user.id)\n",
+    "singer_names.append(user.name)\n",
+    "singer_url.append(user.url)\n",
+    "singer_description.append(user.description)\n",
+    "singer_followers_count.append(user.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 304,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user1 = api.get_user('ArianaGrande')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 305,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user1.id)\n",
+    "singer_names.append(user1.name)\n",
+    "singer_url.append(user1.url)\n",
+    "singer_description.append(user1.description)\n",
+    "singer_followers_count.append(user1.followers_count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 306,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user2 = api.get_user('katyperry')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 307,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user2.id)\n",
+    "singer_names.append(user2.name)\n",
+    "singer_url.append(user2.url)\n",
+    "singer_description.append(user2.description)\n",
+    "singer_followers_count.append(user2.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 308,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user3 = api.get_user('rihanna')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 309,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user3.id)\n",
+    "singer_names.append(user3.name)\n",
+    "singer_url.append(user3.url)\n",
+    "singer_description.append(user3.description)\n",
+    "singer_followers_count.append(user3.followers_count)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 310,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user4 = api.get_user('chrisbrown')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 311,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user4.id)\n",
+    "singer_names.append(user4.name)\n",
+    "singer_url.append(user4.url)\n",
+    "singer_description.append(user4.description)\n",
+    "singer_followers_count.append(user4.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 312,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user5 = api.get_user('justinbieber')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 313,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user5.id)\n",
+    "singer_names.append(user5.name)\n",
+    "singer_url.append(user5.url)\n",
+    "singer_description.append(user5.description)\n",
+    "singer_followers_count.append(user5.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 314,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user6 = api.get_user('ladygaga')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 315,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user6.id)\n",
+    "singer_names.append(user6.name)\n",
+    "singer_url.append(user6.url)\n",
+    "singer_description.append(user6.description)\n",
+    "singer_followers_count.append(user6.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 316,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user7 = api.get_user('maroon5') "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 317,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user7.id)\n",
+    "singer_names.append(user7.name)\n",
+    "singer_url.append(user7.url)\n",
+    "singer_description.append(user7.description)\n",
+    "singer_followers_count.append(user7.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 318,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user8 = api.get_user('BrunoMars') "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 319,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user8.id)\n",
+    "singer_names.append(user8.name)\n",
+    "singer_url.append(user8.url)\n",
+    "singer_description.append(user8.description)\n",
+    "singer_followers_count.append(user8.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 320,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "user9 = api.get_user('taylorswift13') "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 321,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "singer_id.append(user9.id)\n",
+    "singer_names.append(user9.name)\n",
+    "singer_url.append(user9.url)\n",
+    "singer_description.append(user9.description)\n",
+    "singer_followers_count.append(user9.followers_count)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Transform dataframe to table"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 322,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 334,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>singer_ID</th>\n",
+       "      <th>singer_name</th>\n",
+       "      <th>singer_url</th>\n",
+       "      <th>singer_description</th>\n",
+       "      <th>singer_followers_count</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>73992972</td>\n",
+       "      <td>Avril Lavigne</td>\n",
+       "      <td>https://t.co/niyvkKkHrn</td>\n",
+       "      <td>BMG Records. Freesolo / Vector Management. PMK...</td>\n",
+       "      <td>21723532</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>34507480</td>\n",
+       "      <td>Ariana Grande</td>\n",
+       "      <td>https://t.co/76qmPxOH2C</td>\n",
+       "      <td>thank u, next</td>\n",
+       "      <td>61207667</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>21447363</td>\n",
+       "      <td>KATY PERRY</td>\n",
+       "      <td>https://t.co/VxeqPgXTF4</td>\n",
+       "      <td>Love. Light.</td>\n",
+       "      <td>107004117</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>79293791</td>\n",
+       "      <td>Rihanna</td>\n",
+       "      <td>https://t.co/6HarIyKc3f</td>\n",
+       "      <td>Throwing all the shade! @fentybeauty</td>\n",
+       "      <td>89889389</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>119509520</td>\n",
+       "      <td>Chris Brown</td>\n",
+       "      <td>https://t.co/jCtn90KqAF</td>\n",
+       "      <td>#Undecided available everywhere now! SOMEWHERE...</td>\n",
+       "      <td>29840534</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>27260086</td>\n",
+       "      <td>Justin Bieber</td>\n",
+       "      <td>https://t.co/r6Zj8zy1lK</td>\n",
+       "      <td>Let's make the world better.</td>\n",
+       "      <td>105117100</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>14230524</td>\n",
+       "      <td>Lady Gaga</td>\n",
+       "      <td>https://t.co/6CDfvJPhW0</td>\n",
+       "      <td></td>\n",
+       "      <td>78135152</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>24886570</td>\n",
+       "      <td>Maroon 5</td>\n",
+       "      <td>http://t.co/3UhWOxHCRb</td>\n",
+       "      <td>This is the Official Twitter page for Maroon 5...</td>\n",
+       "      <td>14697855</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>100220864</td>\n",
+       "      <td>Bruno Mars</td>\n",
+       "      <td>https://t.co/lrnSFFfTtz</td>\n",
+       "      <td></td>\n",
+       "      <td>42492032</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>17919972</td>\n",
+       "      <td>Taylor Swift</td>\n",
+       "      <td>https://t.co/RSxHoIri2k</td>\n",
+       "      <td>The reputation Stadium Tour is streaming now o...</td>\n",
+       "      <td>83271217</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   singer_ID    singer_name               singer_url  \\\n",
+       "0   73992972  Avril Lavigne  https://t.co/niyvkKkHrn   \n",
+       "1   34507480  Ariana Grande  https://t.co/76qmPxOH2C   \n",
+       "2   21447363     KATY PERRY  https://t.co/VxeqPgXTF4   \n",
+       "3   79293791        Rihanna  https://t.co/6HarIyKc3f   \n",
+       "4  119509520    Chris Brown  https://t.co/jCtn90KqAF   \n",
+       "5   27260086  Justin Bieber  https://t.co/r6Zj8zy1lK   \n",
+       "6   14230524      Lady Gaga  https://t.co/6CDfvJPhW0   \n",
+       "7   24886570       Maroon 5   http://t.co/3UhWOxHCRb   \n",
+       "8  100220864     Bruno Mars  https://t.co/lrnSFFfTtz   \n",
+       "9   17919972   Taylor Swift  https://t.co/RSxHoIri2k   \n",
+       "\n",
+       "                                  singer_description singer_followers_count  \n",
+       "0  BMG Records. Freesolo / Vector Management. PMK...               21723532  \n",
+       "1                                      thank u, next               61207667  \n",
+       "2                                       Love. Light.              107004117  \n",
+       "3               Throwing all the shade! @fentybeauty               89889389  \n",
+       "4  #Undecided available everywhere now! SOMEWHERE...               29840534  \n",
+       "5                       Let's make the world better.              105117100  \n",
+       "6                                                                  78135152  \n",
+       "7  This is the Official Twitter page for Maroon 5...               14697855  \n",
+       "8                                                                  42492032  \n",
+       "9  The reputation Stadium Tour is streaming now o...               83271217  "
+      ]
+     },
+     "execution_count": 334,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n",
+    "a = {\n",
+    "       \n",
+    "        \"singer_ID\": singer_id,\n",
+    "        \"singer_name\": singer_names,\n",
+    "        \"singer_url\": singer_url,\n",
+    "        \"singer_description\": singer_description,\n",
+    "        \"singer_followers_count\": singer_followers_count,\n",
+    " }\n",
+    " \n",
+    "df = pd.DataFrame.from_dict(a, orient='index')\n",
+    "df.transpose()\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Output to csv"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.to_csv('output_singer.csv')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Transpose the csv"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pd.read_csv('output_singer.csv').T.to_csv('twitter_singer.csv',header=False)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Collect popular Twitter posts data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 335,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "most_popular_post_ID = []\n",
+    "post_content = []\n",
+    "post_time = []\n",
+    "post_retweet_count=[]\n",
+    "Post_singer_name = []\n",
+    "search = tweepy.Cursor(api.search, q=\"Avril Lavigne\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search1 = tweepy.Cursor(api.search, q=\"Ariana Grande\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search2 = tweepy.Cursor(api.search, q=\"katy Perry\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search3 = tweepy.Cursor(api.search, q=\"Rihanna\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search9 = tweepy.Cursor(api.search, q=\"chrisbrown\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search4 = tweepy.Cursor(api.search, q=\"Lady Gaga\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search5 = tweepy.Cursor(api.search, q=\"Maroon5\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search6 = tweepy.Cursor(api.search, q=\"Justin Bieber\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search7 = tweepy.Cursor(api.search, q=\"Bruno Mars\", result_type=\"popular\", lang=\"en\").items(1)\n",
+    "search8 = tweepy.Cursor(api.search, q=\"Taylor Swift\", result_type=\"popular\", lang=\"en\").items(1)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 336,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Avril Lavigne'"
+      ]
+     },
+     "execution_count": 336,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "for item in search:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 337,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search1:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 338,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search2:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 339,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search3:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 340,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search9:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 341,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search4:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 342,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search5:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 343,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search6:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 344,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search7:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 345,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for item in search8:    \n",
+    " most_popular_post_ID.append(item.id)\n",
+    " post_content.append(item.text)\n",
+    " post_time.append(item.created_at)\n",
+    " post_retweet_count.append(item.retweet_count)\n",
+    " Post_singer_name.append(item.user.name)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Transform dataframe to table"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 349,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>post_singer_name</th>\n",
+       "      <th>most_popular_post_ID</th>\n",
+       "      <th>post_content</th>\n",
+       "      <th>post_time</th>\n",
+       "      <th>post_retweet_count</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>Avril Lavigne</td>\n",
+       "      <td>1101307743061884931</td>\n",
+       "      <td>I’m so excited to meet one of you (+guest) in ...</td>\n",
+       "      <td>2019-03-01 02:26:41</td>\n",
+       "      <td>711</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>Fast Company</td>\n",
+       "      <td>1102071446677999622</td>\n",
+       "      <td>Ariana Grande's winning streak is now official...</td>\n",
+       "      <td>2019-03-03 05:01:23</td>\n",
+       "      <td>220</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>David Onda</td>\n",
+       "      <td>1102389393602555905</td>\n",
+       "      <td>Katy Perry is frickin’ hilarious, man. Her com...</td>\n",
+       "      <td>2019-03-04 02:04:47</td>\n",
+       "      <td>47</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>ThatGrapeJuice (Sam)</td>\n",
+       "      <td>1102548147497287680</td>\n",
+       "      <td>Report: Rihanna To Sell Office Supplies &amp;amp; ...</td>\n",
+       "      <td>2019-03-04 12:35:37</td>\n",
+       "      <td>117</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>Billboard Charts</td>\n",
+       "      <td>1100485051572199424</td>\n",
+       "      <td>This week's top 5 on the Hot R&amp;amp;B Songs cha...</td>\n",
+       "      <td>2019-02-26 19:57:36</td>\n",
+       "      <td>311</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>5</th>\n",
+       "      <td>billboard</td>\n",
+       "      <td>1102298716558508032</td>\n",
+       "      <td>Lady Gaga &amp;amp; Bradley Cooper's 'A Star Is Bo...</td>\n",
+       "      <td>2019-03-03 20:04:28</td>\n",
+       "      <td>1692</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>6</th>\n",
+       "      <td>Gretchen Ho</td>\n",
+       "      <td>1102204798009466880</td>\n",
+       "      <td>Last chance to send in your entries to my #Sma...</td>\n",
+       "      <td>2019-03-03 13:51:16</td>\n",
+       "      <td>406</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>7</th>\n",
+       "      <td>Luna</td>\n",
+       "      <td>1102292353598087169</td>\n",
+       "      <td>i want a new justin bieber album tbh</td>\n",
+       "      <td>2019-03-03 19:39:11</td>\n",
+       "      <td>2301</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>8</th>\n",
+       "      <td>Pam Grier Ph.D</td>\n",
+       "      <td>1102209419377401856</td>\n",
+       "      <td>I was trying to describe Cardi B to mom with B...</td>\n",
+       "      <td>2019-03-03 14:09:38</td>\n",
+       "      <td>20</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>9</th>\n",
+       "      <td>JustJared.com</td>\n",
+       "      <td>1102342739935543297</td>\n",
+       "      <td>Taylor Swift is back in the recording studio!!...</td>\n",
+       "      <td>2019-03-03 22:59:24</td>\n",
+       "      <td>580</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "       post_singer_name most_popular_post_ID  \\\n",
+       "0         Avril Lavigne  1101307743061884931   \n",
+       "1          Fast Company  1102071446677999622   \n",
+       "2            David Onda  1102389393602555905   \n",
+       "3  ThatGrapeJuice (Sam)  1102548147497287680   \n",
+       "4      Billboard Charts  1100485051572199424   \n",
+       "5             billboard  1102298716558508032   \n",
+       "6           Gretchen Ho  1102204798009466880   \n",
+       "7                  Luna  1102292353598087169   \n",
+       "8        Pam Grier Ph.D  1102209419377401856   \n",
+       "9         JustJared.com  1102342739935543297   \n",
+       "\n",
+       "                                        post_content            post_time  \\\n",
+       "0  I’m so excited to meet one of you (+guest) in ...  2019-03-01 02:26:41   \n",
+       "1  Ariana Grande's winning streak is now official...  2019-03-03 05:01:23   \n",
+       "2  Katy Perry is frickin’ hilarious, man. Her com...  2019-03-04 02:04:47   \n",
+       "3  Report: Rihanna To Sell Office Supplies &amp; ...  2019-03-04 12:35:37   \n",
+       "4  This week's top 5 on the Hot R&amp;B Songs cha...  2019-02-26 19:57:36   \n",
+       "5  Lady Gaga &amp; Bradley Cooper's 'A Star Is Bo...  2019-03-03 20:04:28   \n",
+       "6  Last chance to send in your entries to my #Sma...  2019-03-03 13:51:16   \n",
+       "7               i want a new justin bieber album tbh  2019-03-03 19:39:11   \n",
+       "8  I was trying to describe Cardi B to mom with B...  2019-03-03 14:09:38   \n",
+       "9  Taylor Swift is back in the recording studio!!...  2019-03-03 22:59:24   \n",
+       "\n",
+       "  post_retweet_count  \n",
+       "0                711  \n",
+       "1                220  \n",
+       "2                 47  \n",
+       "3                117  \n",
+       "4                311  \n",
+       "5               1692  \n",
+       "6                406  \n",
+       "7               2301  \n",
+       "8                 20  \n",
+       "9                580  "
+      ]
+     },
+     "execution_count": 349,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "b = {\n",
+    "        \"post_singer_name\" : Post_singer_name,\n",
+    "        \"most_popular_post_ID\": most_popular_post_ID,\n",
+    "        \"post_content\": post_content,\n",
+    "        \"post_time\": post_time,\n",
+    "        \"post_retweet_count\": post_retweet_count\n",
+    "        \n",
+    "      \n",
+    " }\n",
+    " \n",
+    "df = pd.DataFrame.from_dict(b, orient='index')\n",
+    "df.transpose()\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Output to csv"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.to_csv('output_post.csv')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Transpose the csv"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "pd.read_csv('output_post.csv').T.to_csv('twitter_post.csv',header=False)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
