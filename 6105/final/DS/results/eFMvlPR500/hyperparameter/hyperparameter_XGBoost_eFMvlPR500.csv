@@ -1,0 +1,17 @@
+,model_id,ntrees,max_depth,min_rows,min_sum_hessian_in_leaf,sample_rate,col_sample_rate,col_sample_rate_per_tree,booster,reg_lambda,reg_alpha
+0,XGBoost_1_AutoML_20190425_031629,98,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+1,XGBoost_1_AutoML_20190425_034434,106,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+2,XGBoost_2_AutoML_20190425_031629,98,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+3,XGBoost_2_AutoML_20190425_034434,106,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+4,XGBoost_3_AutoML_20190425_031629,98,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+5,XGBoost_3_AutoML_20190425_034434,106,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+6,XGBoost_grid_1_AutoML_20190425_031629_model_1,94,20,10.0,100.0,0.6,0.8,1.0,dart,1.0,0.01
+7,XGBoost_grid_1_AutoML_20190425_031629_model_2,70,15,0.1,100.0,0.8,0.8,0.7,gbtree,0.001,0.01
+8,XGBoost_grid_1_AutoML_20190425_034434_model_1,102,20,10.0,100.0,1.0,1.0,0.9,dart,1.0,1.0
+9,XGBoost_grid_1_AutoML_20190425_034434_model_2,86,20,3.0,100.0,0.8,0.6,0.7,dart,10.0,0.01
+10,XGBoost_grid_1_AutoML_20190425_034434_model_3,117,10,10.0,100.0,1.0,1.0,0.7,gbtree,0.01,0.5
+11,XGBoost_grid_1_AutoML_20190425_034434_model_4,106,10,3.0,100.0,0.6,0.8,1.0,dart,1.0,1.0
+12,XGBoost_grid_1_AutoML_20190425_034434_model_5,132,10,3.0,100.0,0.6,1.0,0.9,gbtree,1.0,0.1
+13,XGBoost_grid_1_AutoML_20190425_034434_model_6,135,15,20.0,100.0,0.6,1.0,1.0,gbtree,1.0,0.5
+14,XGBoost_grid_1_AutoML_20190425_034434_model_7,183,5,1.0,100.0,1.0,0.6,0.7,gbtree,0.001,0.1
+15,XGBoost_grid_1_AutoML_20190425_034434_model_8,16,20,5.0,100.0,0.8,0.8,0.9,dart,0.1,0.01

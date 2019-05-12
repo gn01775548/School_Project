@@ -1,0 +1,3 @@
+,_mean_residual_deviance,categorical_encoding,distribution,fold_assignment,histogram_type,ntrees,seed,stopping_metric,stopping_tolerance
+max,2.6483232090218256e+16,AUTO,gaussian,Modulo,Random,35,8348626130045625785,deviance,0.011609086505314
+min,2.4821773831486484e+16,AUTO,gaussian,Modulo,Random,13,-5061120222178819186,deviance,0.011609086505314

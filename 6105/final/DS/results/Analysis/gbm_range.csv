@@ -1,0 +1,3 @@
+,_mean_residual_deviance,categorical_encoding,col_sample_rate,col_sample_rate_per_tree,distribution,fold_assignment,histogram_type,huber_alpha,learn_rate,max_depth,min_rows,min_split_improvement,ntrees,sample_rate,seed,stopping_metric,stopping_tolerance
+max,9.853167300874355e+16,AUTO,1.0,1.0,gaussian,Modulo,AUTO,0.9,0.8,17,100.0,0.0001,739,1.0,9209026673105970395,deviance,0.011609086505314
+min,2.3462039486604652e+16,AUTO,0.4,0.4,gaussian,Modulo,AUTO,0.9,0.001,3,1.0,1e-05,1,0.5,-9111061617578221222,deviance,0.011609086505314

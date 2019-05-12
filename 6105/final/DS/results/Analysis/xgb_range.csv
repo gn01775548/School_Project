@@ -1,0 +1,3 @@
+,_mean_residual_deviance,backend,booster,categorical_encoding,col_sample_rate,col_sample_rate_per_tree,distribution,dmatrix_type,eta,fold_assignment,grow_policy,learn_rate,max_depth,min_rows,normalize_type,ntrees,reg_alpha,reg_lambda,sample_rate,sample_type,seed,stopping_metric,stopping_tolerance,tree_method
+max,2.159903250331765e+17,auto,gbtree,AUTO,1.0,1.0,AUTO,auto,0.30000000000000004,Modulo,depthwise,0.05,20,20.0,tree,342,1.0,100.0,1.0,uniform,9029067611563076446,deviance,0.011609086505314,auto
+min,2.3382607125691124e+16,auto,dart,AUTO,0.6000000000000001,0.7000000000000001,AUTO,auto,0.30000000000000004,Modulo,depthwise,0.05,5,0.01,tree,2,0.0,0.001,0.6000000000000001,uniform,-9085632511738749858,deviance,0.011609086505314,auto

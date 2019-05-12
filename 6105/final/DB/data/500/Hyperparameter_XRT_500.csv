@@ -1,0 +1,3 @@
+,model_id,balance_classes,class_sampling_factors,max_after_balance_size,min_rows,ntrees,max_depth,stopping_rounds,score_each_iteration,stopping_tolerance,seed
+0,XRT_1_AutoML_20190421_193027,False,,5.0,1.0,13,20,0,False,0.014965432360392486,56939134373235378
+1,XRT_1_AutoML_20190421_193852,False,,5.0,1.0,18,20,0,False,0.014965432360392486,-8021816811412943273

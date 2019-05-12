@@ -1,0 +1,6 @@
+,model_id,ntrees,max_depth,min_rows,min_sum_hessian_in_leaf,sample_rate,col_sample_rate,col_sample_rate_per_tree,booster,reg_lambda,reg_alpha
+0,XGBoost_1_AutoML_20190425_031629,98,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+1,XGBoost_2_AutoML_20190425_031629,98,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+2,XGBoost_3_AutoML_20190425_031629,98,5,3.0,100.0,0.8,0.8,0.8,gbtree,1.0,0.0
+3,XGBoost_grid_1_AutoML_20190425_031629_model_1,94,20,10.0,100.0,0.6,0.8,1.0,dart,1.0,0.01
+4,XGBoost_grid_1_AutoML_20190425_031629_model_2,70,15,0.1,100.0,0.8,0.8,0.7,gbtree,0.001,0.01

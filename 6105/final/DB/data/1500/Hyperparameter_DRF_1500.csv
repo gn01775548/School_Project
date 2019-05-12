@@ -1,0 +1,5 @@
+,model_id,balance_classes,class_sampling_factors,max_after_balance_size,min_rows,ntrees,max_depth,stopping_rounds,score_each_iteration,stopping_tolerance,seed
+0,DRF_1_AutoML_20190421_193027,False,,5.0,1.0,14,20,0,False,0.014965432360392486,289857840033600655
+1,DRF_1_AutoML_20190421_193852,False,,5.0,1.0,14,20,0,False,0.014965432360392486,4448890390150882163
+2,DRF_1_AutoML_20190421_195113,False,,5.0,1.0,12,20,0,False,0.014965432360392486,8868244805359666697
+3,DRF_1_AutoML_20190421_201138,False,,5.0,1.0,14,20,0,False,0.014965432360392486,8526487506220793987
